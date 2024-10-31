@@ -10,12 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Màu nền xám nhạt */
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #007BFF; /* Header màu xanh */
-    color: white; /* Chữ màu trắng */
+    background-color: #007BFF;
+    color: white;
     padding: 20px;
     text-align: center;
     font-size: 24px;
@@ -27,20 +27,20 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff; /* Nền trắng cho container */
-    flex-wrap: wrap; /* Đảm bảo các ô sẽ xuống dòng khi không đủ không gian */
+    background-color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .Box {
-    background-color: #fff; /* Màu nền trắng */
-    border: 2px solid #ddd; /* Viền xám nhạt */
+    background-color: #fff;
+    border: 2px solid #ddd;
     padding: 20px;
     width: 300px;
     text-align: center;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px;
     max-width: 100%;
+    flex: 1 1 300px;
 }
 
 .buttons {
@@ -51,18 +51,18 @@ header {
     text-decoration: none;
     padding: 10px 15px;
     color: white;
-    background-color: #333; /* Nút màu đen */
+    background-color: #333;
     border-radius: 5px;
     font-size: 16px;
     display: inline-block;
 }
 
 .btn:hover {
-    background-color: #555; /* Nút màu xám đậm khi hover */
+    background-color: #555;
 }
 
 footer {
-    background-color: #333; /* Footer màu đen */
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
@@ -70,148 +70,21 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    position: relative;
 }
 
 footer div {
     margin: 10px;
+    text-align: left;
 }
 
 footer ul {
     list-style-type: none;
+    padding: 0;
 }
 
 footer ul li {
     margin-bottom: 5px;
-}
-
-footer a {
-    color: #ffffff; /* Link màu trắng */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #ddd; /* Link hover chuyển thành xám nhạt */
-}
-
-footer p {
-    margin-top: 10px;
-}
-
-.bottom p {
-    text-align: center;
-    font-size: 14px;
-    color: #bbb; /* Màu chữ xám nhạt cho footer */
-    margin-top: 20px;
-}
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Đảm bảo các mục sẽ được wrap thành nhiều hàng khi cần */
-    justify-content: center;
-}
-
-footer ul li {
-    width: 50%; /* Chia mỗi mục thành 50% để tạo 2 cột */
-    margin-bottom: 10px; /* Khoảng cách giữa các mục */
-    text-align: left; /* Căn trái cho mỗi mục */
-}
-
-footer a {
-    color: #ffffff; /* Link màu trắng */
-    text-decoration: none;
-    font-size: 16px; /* Kích thước chữ */
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #ddd; /* Link hover chuyển thành xám nhạt */
-}
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-footer div {
-    margin: 10px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* Chỉ áp dụng flex cho phần "App we use" */
-footer .app-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-footer .app-list li {
-    width: 50%; /* Chia mỗi mục thành 50% để tạo 2 cột */
-    margin-bottom: 10px; /* Khoảng cách giữa các mục */
-    text-align: left; /* Căn trái cho mỗi mục */
-}
-
-footer .about-list {
-    text-align: left; /* Căn trái cho About us */
-}
-
-footer a {
-    color: #ffffff; /* Link màu trắng */
-    text-decoration: none;
-    font-size: 16px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #ddd; /* Link hover chuyển thành xám nhạt */
-}
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    position: relative; /* Đảm bảo vị trí tương đối */
-}
-
-footer div {
-    margin: 10px;
-    text-align: left;
-}
-
-footer p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer .app-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-footer .app-list li {
-    width: 50%;
-    margin-bottom: 10px;
-    text-align: left;
 }
 
 footer a {
@@ -225,18 +98,27 @@ footer a:hover {
     color: #ddd;
 }
 
-/* Đảm bảo copyright nằm ở dưới cùng */
 footer .copyright {
     font-size: 14px;
     color: #bbb;
     text-align: center;
     width: 100%;
-    margin-top: 20px; /* Đẩy copyright cách xa các phần khác */
+    margin-top: 20px;
 }
 
-/* Đảm bảo rằng trên các thiết bị nhỏ hơn, giao diện vẫn hiển thị tốt */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Chuyển các ô thành dọc nếu màn hình nhỏ */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Box {
+        width: 90%; /* Ensure boxes take up most of the screen width on smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
     }
 }
