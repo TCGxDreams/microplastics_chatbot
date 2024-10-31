@@ -203,7 +203,6 @@ footer .copyright {
 }
 /* Đảm bảo rằng trên các thiết bị nhỏ hơn, giao diện vẫn hiển thị tốt */
 @media (max-width: 768px) {
-
     .Box {
         width: 90%; 
         max-width: 100%;
